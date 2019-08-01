@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Santa Ajuda</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="css/themes/santa.min.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="css/display.css">
 	<script src="js/jquery.min.js"></script>
@@ -19,21 +21,21 @@
                 <h3 class="subtitulo">
                 <em>Já parou para pensar como será sua aposentadoria?</em>
                 </h3>
-                <a href="#form" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-b">Vamos lá!</a>                
+                <a href="#form" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-c">Vamos lá!</a>                
             </center>
         </div>
     </div>
 
     <div data-role="page" id="form">
-        <div data-role="header">
+        <div data-role="header" data-theme="c">
             <a href="#vamos"  data-transition="slideup" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-u">Voltar</a>
             <h1>Sobre você</h1>
-            <a href="#" class="ui-btn-right ui-btn ui-btn-b ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-clock">Etapa 1/7</a>
+            <a href="#" class="ui-btn-right ui-btn ui-btn-c ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-clock">Etapa 1/7</a>
         </div>
         <div role="main" class="ui-content bgform1">
             <center>
                 <div class="ui-corner-all custom-corners">
-                  <div class="ui-body ui-body-a ui-corner-all">
+                  <div class="ui-body ui-body-c ui-corner-all">
                     <BR /><BR />
                     <!--<h3 class="titulo">Quero te conhecer melhor!</h3-->
                     <p>
@@ -45,7 +47,7 @@
                                 <input type="range" name="idade" required id="idade" min="18" max="90" value="30" data-popup-enabled="true">                            
                             </div>
                         </form>
-                        <a href="#form2" id="etapa1" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-b">Próximo</a>                
+                        <a href="#form2" id="etapa1" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-c">Próximo</a>                
                     </p>
                   </div>
                 </div>
@@ -57,12 +59,12 @@
     </div>
 
     <div data-role="page" id="form2">
-        <div data-role="header">
+        <div data-role="header" data-theme="c">
             <a href="#form"  data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Voltar</a>
             <h1>Saúde</h1>
             <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
                 <a href="#" id="toptot2" class="ui-btn ui-btn-icon-left ui-btn-a ui-icon-shop">Gastos: R$ 0,00</a>
-                <a href="#" class="ui-btn ui-btn-icon-right ui-btn-b ui-icon-clock">Etapa 2/7</a>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-btn-c ui-icon-clock">Etapa 2/7</a>
             </div>
         </div>
         <div role="main" class="ui-content bgform2">
@@ -82,7 +84,7 @@
                                 <label for="rdsaude4">Executivo<span class="ui-li-count">R$ 1.500,00</span></label>
                             </fieldset>
                         </form>
-                        <a href="#form3" id="etapa2" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-b">Próximo</a>                
+                        <a href="#form3" id="etapa2" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-c">Próximo</a>                
                     </div>
                 </div>
             </center>
@@ -90,12 +92,12 @@
     </div>
 
     <div data-role="page" id="form3">
-        <div data-role="header">
+        <div data-role="header" data-theme="c">
                 <a href="#form2"  data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Voltar</a>
                 <h1>Moradia</h1>
                 <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
                     <a href="#" id="toptot3" class="ui-btn ui-btn-icon-left ui-btn-a ui-icon-shop">Gastos: R$ 0,00</a>
-                    <a href="#" class="ui-btn ui-btn-icon-right ui-btn-b ui-icon-clock">Etapa 3/7</a>
+                    <a href="#" class="ui-btn ui-btn-icon-right ui-btn-c ui-icon-clock">Etapa 3/7</a>
                 </div>
             </div>
             <div role="main" class="ui-content bgform3">
@@ -103,7 +105,7 @@
                     <div class="ui-corner-all custom-corners">
                         <div class="ui-body ui-body-a ui-corner-all">
                             <form>
-                                <fieldset data-role="controlgroup" data-type="horizontal">
+                                <fieldset data-role="controlgroup" data-type="horizontal" data-theme="d">
                                     <input type="radio" name="rdmoradia" id="rdmoradia1" value="1">
                                     <label for="rdmoradia1">Própria</label>
                                     <input type="radio" name="rdmoradia" id="rdmoradia2" value="2">
@@ -120,7 +122,7 @@
                                     <label for="rdpadrao3">Alto<span class="ui-li-count">R$ 2.500,00</span></label>
                                 </fieldset>
                             </form>
-                            <a href="#form4" id="etapa3" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-b">Próximo</a>                
+                            <a href="#form4" id="etapa3" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-c">Próximo</a>                
                         </div>
                     </div>
                 </center>
@@ -128,12 +130,12 @@
     </div>
 
     <div data-role="page" id="form4">
-        <div data-role="header">
+        <div data-role="header" data-theme="c">
             <a href="#form3"  data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Voltar</a>
             <h1>Alimentação</h1>
             <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
                 <a href="#" id="toptot4" class="ui-btn ui-btn-icon-left ui-btn-a ui-icon-shop">Gastos: R$ 0,00</a>
-                <a href="#" class="ui-btn ui-btn-icon-right ui-btn-b ui-icon-clock">Etapa 4/7</a>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-btn-c ui-icon-clock">Etapa 4/7</a>
             </div>
         </div>
         <div role="main" class="ui-content bgform4">
@@ -151,7 +153,7 @@
                                 <label for="rdalimento3">Alto<span class="ui-li-count">R$ 1.500,00</span></label>
                             </fieldset>
                         </form>
-                        <a href="#form5" id="etapa4" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-b">Próximo</a>                
+                        <a href="#form5" id="etapa4" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-c">Próximo</a>                
                     </div>
                 </div>
             </center>
@@ -159,12 +161,12 @@
     </div>   
     
     <div data-role="page" id="form5">
-        <div data-role="header">
+        <div data-role="header" data-theme="c">
                 <a href="#form4"  data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Voltar</a>
                 <h1>Transporte</h1>
                 <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
                     <a href="#" id="toptot5" class="ui-btn ui-btn-icon-left ui-btn-a ui-icon-shop">Gastos: R$ 0,00</a>
-                    <a href="#" class="ui-btn ui-btn-icon-right ui-btn-b ui-icon-clock">Etapa 5/7</a>
+                    <a href="#" class="ui-btn ui-btn-icon-right ui-btn-c ui-icon-clock">Etapa 5/7</a>
                 </div>
             </div>
             <div role="main" class="ui-content bgform5">
@@ -182,7 +184,7 @@
                                     <label for="cbtrans3">Táxi / Uber</label>
                                 </fieldset>
                             </form>
-                            <a href="#form6" id="etapa5" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-b">Próximo</a>                
+                            <a href="#form6" id="etapa5" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left ui-shadow-icon ui-btn-c">Próximo</a>                
                         </div>
                     </div>
                 </center>
@@ -190,12 +192,12 @@
     </div> 
 
     <div data-role="page" id="form6">
-        <div data-role="header">
+        <div data-role="header" data-theme="c">
                 <a href="#form5"  data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Voltar</a>
                 <h1>Viagem e Lazer</h1>
                 <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
                     <a href="#" id="toptot6" class="ui-btn ui-btn-icon-left ui-btn-a ui-icon-shop">Gastos: R$ 0,00</a>
-                    <a href="#" class="ui-btn ui-btn-icon-right ui-btn-b ui-icon-clock">Etapa 6/7</a>
+                    <a href="#" class="ui-btn ui-btn-icon-right ui-btn-c ui-icon-clock">Etapa 6/7</a>
                 </div>
             </div>
             <div role="main" class="ui-content bgform6">
@@ -213,7 +215,7 @@
                                     <label for="cblaz3">Hobby (Clube, academia, esportes e outros)</label>
                                 </fieldset>
                             </form>
-                            <a href="#result" id="etapa6" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left ui-shadow-icon ui-btn-b">Resultado</a>                
+                            <a href="#result" id="etapa6" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left ui-shadow-icon ui-btn-c">Resultado</a>                
                         </div>
                     </div>
                 </center>
@@ -221,10 +223,10 @@
     </div> 
 
     <div data-role="page" id="result">
-        <div data-role="header">
+        <div data-role="header" data-theme="c">
                 <a href="#form6"  data-transition="slideup" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-u">Voltar</a>
                 <h1>Simulação</h1>
-                <a href="#" class="ui-btn-right ui-btn ui-btn-b ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-clock">Etapa 7/7</a>
+                <a href="#" class="ui-btn-right ui-btn ui-btn-c ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-clock">Etapa 7/7</a>
             </div>
             <div role="main" class="ui-content bgresult">
                 <center>
