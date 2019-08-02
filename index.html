@@ -236,7 +236,14 @@
                             <p>Dados do resultado...</p>
                         </div>
                     </div>
-                </center>
+                    <div class="ui-grid-a ui-responsive">
+                        <div class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid 1</a></div>
+                        <div class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid 2</a></div>
+                    </div>
+                    <div class="ui-grid-solo ui-responsive">
+                        <div class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid 3</a></div>
+                    </div>                
+            </center>
             </div>
     </div>
 
@@ -293,6 +300,16 @@
             cbLaz = 0;
             $.each(cbL,function(){cbLaz+=parseInt(this) || 0;});
             somaGastos();
+        });
+
+        $( '#result' ).on( 'pagebeforeshow',function(event){
+            $("body").css("overflow-Y", "auto");
+            $("html").css("overflow-Y", "auto");
+        });
+
+        $( '#result' ).on( 'pagebeforehide',function(event){
+            $("body").css("overflow-Y", "hidden");
+            $("html").css("overflow-Y", "hidden");
         });
     </script>
 </body>
