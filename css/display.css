@@ -19,6 +19,19 @@ html {
     font-size: 18px;
 }
 
+.labelResult{
+    font-size: 12px;
+    padding: 0px;
+    text-align: left;
+}
+
+.labelResultBold{
+    font-size: 14px;
+    padding: 0px;
+    font-weight: bold;
+    text-align: left;
+}
+
 .labelquiz{
     font-size: 21px;
     font-weight: bold;
@@ -137,8 +150,8 @@ html {
     height: auto;
     /*padding-top: 5rem;*/
     padding-bottom: 8rem;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/result.jpg");
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/result.jpg");
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead-old.jpg");
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead-old.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,6 +163,10 @@ html {
 
     .ui-radio{
         padding-right: 0px;
+    }
+
+    .resize {
+        width: 150px !important;
     }
 
   /* Hide the number input 

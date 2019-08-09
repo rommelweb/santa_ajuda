@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="css/display.css">
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
     <div data-role="page" id="vamos">
@@ -233,17 +233,108 @@
                     <div class="ui-corner-all custom-corners">
                         <div class="ui-body ui-body-a ui-corner-all">
                             <h3 id="titform">Seu resultado!</h3>
-                            <p>Dados do resultado...</p>
+                            <p>Aqui você pode ajustar os valores</p>
                         </div>
                     </div>
                     <div class="ui-grid-a ui-responsive">
-                        <div class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid 1</a></div>
-                        <div class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid 2</a></div>
+                        <div class="ui-block-a">
+                            <div class="ui-corner-all custom-corners">
+                                <div class="ui-body ui-body-a ui-corner-all">
+                                    <p>
+                                        <form id="frm1" class="full-width-slider">
+                                            <p class="labelResultBold">Saúde:</p><input type="range" name="valSaude" required id="valSaude" data-highlight="true" data-track-theme="a" data-theme="d" min="100" max="5000" step="50" value="500" data-popup-enabled="false">                            
+                                            <p class="labelResultBold">Moradia:</p><input type="range" name="valMoradia" required id="valMoradia" data-highlight="true" data-track-theme="a" data-theme="d" min="100" max="5000" step="50" value="500" data-popup-enabled="false">
+                                            <p class="labelResultBold">Alimentação:</p><input type="range" name="valAlimentacao" required id="valAlimentacao" data-highlight="true" data-track-theme="a" data-theme="d" min="100" max="5000" step="50" value="500" data-popup-enabled="false">
+                                            <p class="labelResultBold">Transporte:</p><input type="range" name="valTransporte" required id="valTransporte" data-highlight="true" data-track-theme="a" data-theme="d" min="100" max="5000" step="50" value="500" data-popup-enabled="false">
+                                            <p class="labelResultBold">Lazer:</p><input type="range" name="valLazer" required id="valLazer" min="100" data-highlight="true" data-track-theme="a" data-theme="d" max="5000" step="50" value="500" data-popup-enabled="false">
+                                            <p class="labelResultBold">Extra:</p><input type="range" name="valExtra" required id="valvalExtraSaude" data-highlight="true" data-track-theme="a" data-theme="d" min="0" max="5000" step="50" value="0" data-popup-enabled="false">
+                                        </form>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-block-b">
+                            <div class="ui-corner-all custom-corners">
+                                <div class="ui-body ui-body-a ui-corner-all">
+                                    <p>
+                                        <form id="frm1">
+                                            <div style="text-align: left" class="ui-field-contain">
+                                                    <p class="labelResultBold">Quando pretente se aposentar?</p><input type="range" name="valAposent" required id="valAposent" data-highlight="true" data-track-theme="a" data-theme="a" min="50" max="90" step="1" value="65" data-popup-enabled="false">                            
+                                                    <p class="labelResultBold">Qual a sua expectativa de vida?</p><input type="range" name="valExpec" required id="valExpec" data-highlight="true" data-track-theme="a" data-theme="a" min="50" max="120" step="1" value="85" data-popup-enabled="false">                            
+                                                    <p class="labelResultBold">Ganho real (taxa):</p><input type="range" name="valTaxa" required id="valTaxa" data-highlight="true" data-track-theme="a" data-theme="a" min="1" max="10" step=".1" value="3.5" data-popup-enabled="false">                            
+                                                    <br><br>
+                                                    <p class="labelResultBold">Quanto você já tem investido?</p>
+                                                    <input data-wrapper-class="resize" type="number" name="valInvest" data-theme="d" pattern="[0-9]*" id="valInvest" placeholder="10.000" value="">
+                                                    <p class="labelResultBold">Quanto você pode guardar por mês?</p>
+                                                    <input data-wrapper-class="resize" type="number" name="valGuard" data-theme="d" pattern="[0-9]*" id="valGuard" placeholder="1.000" value="">
+                                            </div>
+                                        </form>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="ui-grid-solo ui-responsive">
-                        <div class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid 3</a></div>
-                    </div>                
-            </center>
+                            <div class="ui-corner-all custom-corners">
+                                <div class="ui-body ui-body-a ui-corner-all">
+                                    <h3 id="titform">Saldo</h3>
+                                    <div class="ui-grid-b ui-responsive">
+                                        <div class="ui-block-a">
+                                            <p>
+                                                <div class="ui-body ui-body-c ui-corner-all" style="text-align: left;">
+                                                        <p class="labelResult">Seu saldo projetado aos <b class="labelResult">70 anos</b> é de <b class="labelResultBold">138.876,50</b><br><br></p>
+                                                </div>
+                                            </p>
+                                        </div>
+                                        <div class="ui-block-b">
+                                            <p>
+                                                <div class="ui-body ui-body-c ui-corner-all" style="text-align: left">
+                                                        <p class="labelResult">Com este saldo, efetuará resgates mensais dos <b class="labelResult">70 aos 87 anos</b> de<b class="labelResultBold"> 976,50</b></p>
+                                                </div>
+                                            </p>
+                                        </div>
+                                        <div class="ui-block-c">
+                                            <p>
+                                                <div class="ui-body ui-body-c ui-corner-all" style="text-align: left">
+                                                        <p class="labelResult">Opa! Ainda faltará para cobrir suas despesas: <b class="labelResultBold" style="color:red"> 4.873,50</b><br><br></p>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="ui-grid-solo ui-responsive">
+                        <div class="ui-corner-all custom-corners">
+                            <div class="ui-body ui-body-a ui-corner-all">
+                                <h3 id="titform">Sua Meta</h3>
+                                <div class="ui-grid-b ui-responsive">
+                                    <div class="ui-block-a">
+                                        <p>
+                                            <div class="ui-body ui-body-c ui-corner-all" style="text-align: left;">
+                                                    <p class="labelResult">Guardar dos <b class="labelResult">38 aos 70 anos</b> (mês): <b class="labelResultBold">1.276,50</b><br><br></p>
+                                            </div>
+                                        </p>
+                                    </div>
+                                    <div class="ui-block-b">
+                                        <p>
+                                            <div class="ui-body ui-body-c ui-corner-all" style="text-align: left">
+                                                    <p class="labelResult"> <b>Ou então</b> aplicar aos <b class="labelResult">38 anos</b> (Investimento inicial): <b class="labelResultBold">976,50</b><br><br></p>
+                                            </div>
+                                        </p>
+                                    </div>
+                                    <div class="ui-block-c">
+                                        <p>
+                                            <div class="ui-body ui-body-b ui-corner-all" style="text-align: left">
+                                                    <p class="labelResult">Renda mensal: <b class="labelResultBold"> 5.800,00</b><br><br></p>
+                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </center>
             </div>
     </div>
 
@@ -305,6 +396,12 @@
         $( '#result' ).on( 'pagebeforeshow',function(event){
             $("body").css("overflow-Y", "auto");
             $("html").css("overflow-Y", "auto");
+            //setar valores
+            $("#valSaude").val(rdSaude).slider("refresh");
+            $("#valMoradia").val(rdPadrao).slider("refresh");
+            $("#valAlimentacao").val(rdAlimento).slider("refresh");
+            $("#valTransporte").val(cbTrans).slider("refresh");
+            $("#valLazer").val(cbLaz).slider("refresh");
         });
 
         $( '#result' ).on( 'pagebeforehide',function(event){
