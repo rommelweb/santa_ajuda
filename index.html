@@ -282,14 +282,14 @@
                                         <div class="ui-block-a">
                                             <p>
                                                 <div class="ui-body ui-body-c ui-corner-all" style="text-align: left;">
-                                                        <p class="labelResult">Seu saldo projetado aos <b class="labelResult">70 anos</b> é de <b class="labelResultBold">138.876,50</b><br><br></p>
+                                                        <p class="labelResult">Seu saldo projetado aos <b class="labelResult" id="resAposS">70</b> <b class="labelResult">anos</b> é de <b class="labelResultBold">138.876,50</b><br><br></p>
                                                 </div>
                                             </p>
                                         </div>
                                         <div class="ui-block-b">
                                             <p>
                                                 <div class="ui-body ui-body-c ui-corner-all" style="text-align: left">
-                                                        <p class="labelResult">Com este saldo, efetuará resgates mensais dos <b class="labelResult">70 aos 87 anos</b> de<b class="labelResultBold"> 976,50</b></p>
+                                                        <p class="labelResult">Com este saldo, efetuará resgates mensais dos <b class="labelResult" id="resAposR">70</b> <b class="labelResult">aos</b> <b class="labelResult" id="resExpec">87</b> <b class="labelResult">anos</b> de<b class="labelResultBold"> 976,50</b></p>
                                                 </div>
                                             </p>
                                         </div>
@@ -312,14 +312,14 @@
                                     <div class="ui-block-a">
                                         <p>
                                             <div class="ui-body ui-body-c ui-corner-all" style="text-align: left;">
-                                                    <p class="labelResult">Guardar dos <b class="labelResult">38 aos 70 anos</b> (mês): <b class="labelResultBold">1.276,50</b><br><br></p>
+                                                    <p class="labelResult">Guardar dos <b class="labelResult" id="resIdadeG">38</b> <b class="labelResult">aos</b> <b class="labelResult" id="resAposM">70</b> <b class="labelResult">anos</b> (mês): <b class="labelResultBold">1.276,50</b><br><br></p>
                                             </div>
                                         </p>
                                     </div>
                                     <div class="ui-block-b">
                                         <p>
                                             <div class="ui-body ui-body-c ui-corner-all" style="text-align: left">
-                                                    <p class="labelResult"> <b>Ou então</b> aplicar aos <b class="labelResult">38 anos</b> (Investimento inicial): <b class="labelResultBold">976,50</b><br><br></p>
+                                                    <p class="labelResult"> <b>Ou então</b> aplicar aos <b class="labelResult" id="resIdadeA">38</b> <b class="labelResult">anos</b> (Investimento inicial): <b class="labelResultBold">976,50</b><br><br></p>
                                             </div>
                                         </p>
                                     </div>
@@ -393,21 +393,45 @@
             somaGastos();
         });
 
-        $( '#result' ).on( 'pagebeforeshow',function(event){
+        $('#result').on( 'pagebeforeshow',function(event){
             $("body").css("overflow-Y", "auto");
             $("html").css("overflow-Y", "auto");
-            //setar valores
+            //setar valores slides
             $("#valSaude").val(rdSaude).slider("refresh");
             $("#valMoradia").val(rdPadrao).slider("refresh");
             $("#valAlimentacao").val(rdAlimento).slider("refresh");
             $("#valTransporte").val(cbTrans).slider("refresh");
             $("#valLazer").val(cbLaz).slider("refresh");
+            //setar valores das labels
+            $("#resIdadeG").html($("#idade").val());
+            $("#resIdadeA").html($("#idade").val());
+            atualizaValAposent();
+            atualizaValExpec();
         });
 
-        $( '#result' ).on( 'pagebeforehide',function(event){
+        $("#result").on("pagecreate", function( event ) {
+            $("#valAposent").change(function() { 
+                atualizaValAposent();
+            });
+            $("#valExpec").change(function() { 
+                atualizaValExpec();
+            });
+        });
+
+        $('#result').on( 'pagebeforehide',function(event){
             $("body").css("overflow-Y", "hidden");
             $("html").css("overflow-Y", "hidden");
         });
+
+        function atualizaValAposent(){
+            $("#resAposS").html($("#valAposent").val());
+            $("#resAposR").html($("#valAposent").val());
+            $("#resAposM").html($("#valAposent").val());
+        }
+
+        function atualizaValExpec(){
+            $("#resExpec").html($("#valExpec").val());
+        }
     </script>
 </body>
 </html>
